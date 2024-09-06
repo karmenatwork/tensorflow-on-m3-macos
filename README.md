@@ -14,12 +14,11 @@ Before anything make sure you have Xcode Command Line tools (Xcode CLT) installe
 `xcode-select --install`
 
 
-Choose based on your [experience.](https://docs.anaconda.com/distro-or-miniconda/)
- 
-I have followed [conda's tip](https://conda.io/projects/conda/en/latest/user-guide/install/index.html): "If you are just starting out, we recommend installing conda via the Miniconda installer." I just finished an AI/ML bootcamp and since I'm still a bun in the owen, I chose to [download the latest](https://conda.io/projects/conda/en/latest/index.html)
-Miniconda installer for macOS with Apple Silicon. Then I followed its instructions.
+Choose based on your [experience.](https://docs.anaconda.com/distro-or-miniconda/). I have followed [Conda's tip](https://conda.io/projects/conda/en/latest/user-guide/install/index.html): "If you are just starting out, we recommend installing conda via the Miniconda installer." 
+I just finished an AI/ML bootcamp and since I'm still a bun in the oven!😅, I chose to [download the latest](https://conda.io/projects/conda/en/latest/index.html) Miniconda installer for macOS with Apple Silicon. Then I followed its instructions.
 
-After the installation is finished, open your ternminal and type the command  `conda`. You will see `(base)` which is the default environment. It's a good idea to have jupyter installed there.  
+After the installation is finished, open your ternminal and type the command  `conda`. You will see `(base)` which is the default environment. It's a good idea to have jupyter installed there. 
+
 `(base) ➜  ~ conda install -y jupyter`
 
 ## Installation
