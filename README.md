@@ -1,5 +1,12 @@
 # Tensorflow on a M3 macOS
 
+***Notes***: 
+- As of early 2024, TensorFlow has **native support** for Apple Silicon (M1/M2/M3 chips). This means you can run TensorFlow efficiently on your M3 Mac without needing to use Rosetta 2 for translation.
+
+- Installation is simpler now. Apple has worked with the TensorFlow team to create a package called tensorflow-macos, which is optimized for Mac systems with Apple Silicon.
+
+- Metal support. TensorFlow on Mac can use Apple's Metal framework for GPU acceleration, which is optimized for Apple Silicon.
+
 ## Before installation
 
 Before anything make sure you have Xcode Command Line tools (Xcode CLT) installed
@@ -11,13 +18,6 @@ Choose based on your [experience.](https://docs.anaconda.com/distro-or-miniconda
  
 I have followed [conda's tip](https://conda.io/projects/conda/en/latest/user-guide/install/index.html): "If you are just starting out, we recommend installing conda via the Miniconda installer." I just finished an AI/ML bootcamp and since I'm still a bun in the owen, I chose to [download the latest](https://conda.io/projects/conda/en/latest/index.html)
 Miniconda installer for macOS with Apple Silicon. Then I followed its instructions.
-
-***Notes***: 
-- As of early 2024, TensorFlow has **native support** for Apple Silicon (M1/M2/M3 chips). This means you can run TensorFlow efficiently on your M3 Mac without needing to use Rosetta 2 for translation.
-
-- Installation is simpler now. Apple has worked with the TensorFlow team to create a package called tensorflow-macos, which is optimized for Mac systems with Apple Silicon.
-
-- Metal support. TensorFlow on Mac can use Apple's Metal framework for GPU acceleration, which is optimized for Apple Silicon.
 
 After the installation is finished, open your ternminal and type the command  `conda`. You will see `(base)` which is the default environment. It's a good idea to have jupyter installed there.  
 `(base) ➜  ~ conda install -y jupyter`
@@ -33,11 +33,11 @@ For example, you can create an environment with a python's version
 
 `conda create -n ENV_NAME python=<version>`
 
-such as: `conda create -n tf-env python=3.11`
+such as: `conda create -n tf python=3.11`
 
 then activate it by doing: 
 
-`conda activate tf-env`
+`conda activate tf`
 
 #### 2. Upgrade pip
 
@@ -66,11 +66,11 @@ For example, you can create an environment with a python's version
 
 `conda create -n ENV_NAME python=<version>`
 
-such as:  `conda create -n tf python=3.11`
-
-**To activate this environment, use**
+such as:  `conda create -n tf python=3.11`, and then to activate run
 
 `conda activate tf`
+
+You will see your current environment in your terminal like `(tf)` .
 
 
 ## Cheat Sheat
@@ -81,7 +81,7 @@ such as:  `conda create -n tf python=3.11`
 
 **To activate this environment, use**
 
-`conda activate tf-env`
+`conda activate ENV_NAME`
 
 **To deactivate an active environment, use**
 
